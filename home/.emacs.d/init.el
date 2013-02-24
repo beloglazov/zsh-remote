@@ -6,8 +6,6 @@
 ;; Color theme
 ;(load-theme 'solarized-dark t)
 ;(require 'zenburn-theme)
-(load-theme 'deeper-blue)
-
 
 ;; auto-complete: https://github.com/m2ym/auto-complete
 (require 'auto-complete-config)
