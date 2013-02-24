@@ -1,0 +1,3 @@
+#compdef za
+
+_files -g "*.pdf"
