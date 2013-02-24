@@ -12,7 +12,7 @@ Apart from that, simple installation and uninstallation scripts are included.
 First of all, you need to clone this repository to any directory you want:
 
 ```Bash
-git clone https://github.com/beloglazov/zsh-remote.git
+git clone git://github.com/beloglazov/zsh-remote.git
 ```
 
 Next, you need to cd into the cloned repository:
