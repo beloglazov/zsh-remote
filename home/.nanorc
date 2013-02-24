@@ -91,7 +91,7 @@
 # set nonewlines
 
 ## Don't wrap text at all.
-set nowrap
+ unset nowrap
 
 ## Set operating directory.  nano will not read or write files outside
 ## this directory and its subdirectories.  Also, the current directory
@@ -139,7 +139,7 @@ set nowrap
  set smarthome
 
 ## Use smooth scrolling as the default.
- set smooth
+ unset smooth
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not properly have a default value.
