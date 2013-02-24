@@ -74,7 +74,6 @@ bindkey "\e[F" end-of-line
 # Functions
 
 function silent () {nohup $@ &>/dev/null &!}
-function e () {silent emacsclient -c $*}
 function svnd () {svn diff $* | colordiff}
 function top10 () {history | awk '{print $2}'|awk 'BEGIN {FS="|"} {print $1}' | sort | uniq -c | sort -rn | head -10}
 function f() {find ./ -iname "*$1*" 2>/dev/null | grep -i $1}
@@ -91,6 +90,7 @@ alias lltime='ll -tr'
 alias df='df -h'
 alias du='du -hs'
 alias mkdirs='mkdir -p'
+alias e='emacsclient'
 alias n='nano'
 alias bc='bc -l'
 alias psg='ps aux | grep'
