@@ -1,0 +1,48 @@
+[submodule "home/.emacs.d/modes/yasnippet"]
+	path = home/.emacs.d/modes/yasnippet
+	url = git://github.com/capitaomorte/yasnippet.git
+[submodule "home/.emacs.d/modes/magit"]
+	path = home/.emacs.d/modes/magit
+	url = git://github.com/magit/magit.git
+[submodule "home/.emacs.d/modes/markdown-mode"]
+	path = home/.emacs.d/modes/markdown-mode
+	url = git://jblevins.org/git/markdown-mode.git
+[submodule "home/.emacs.d/modes/pylookup"]
+	path = home/.emacs.d/modes/pylookup
+	url = git://github.com/tsgates/pylookup.git
+[submodule "home/.emacs.d/modes/flymake-cursor"]
+	path = home/.emacs.d/modes/flymake-cursor
+	url = git://github.com/illusori/emacs-flymake-cursor.git
+[submodule "home/.emacs.d/modes/haskell-mode"]
+	path = home/.emacs.d/modes/haskell-mode
+	url = git://github.com/haskell/haskell-mode.git
+[submodule "home/.emacs.d/modes/ido-ubiquitous"]
+	path = home/.emacs.d/modes/ido-ubiquitous
+	url = git://github.com/technomancy/ido-ubiquitous.git
+[submodule "home/.emacs.d/modes/smex"]
+	path = home/.emacs.d/modes/smex
+	url = git://github.com/nonsequitur/smex.git
+[submodule "home/.emacs.d/modes/fill-column-indicator"]
+	path = home/.emacs.d/modes/fill-column-indicator
+	url = git://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "home/.emacs.d/modes/php-mode"]
+	path = home/.emacs.d/modes/php-mode
+	url = git://github.com/ejmr/php-mode.git
+[submodule "home/.emacs.d/modes/ace-jump-mode"]
+	path = home/.emacs.d/modes/ace-jump-mode
+	url = git://github.com/winterTTr/ace-jump-mode.git
+[submodule "home/.emacs.d/modes/popup-el"]
+	path = home/.emacs.d/modes/popup-el
+	url = git://github.com/auto-complete/popup-el
+[submodule "home/.emacs.d/modes/auto-complete"]
+	path = home/.emacs.d/modes/auto-complete
+	url = git://github.com/auto-complete/auto-complete
+[submodule "home/.emacs.d/modes/clojure-mode"]
+	path = home/.emacs.d/modes/clojure-mode
+	url = git://github.com/technomancy/clojure-mode.git
+[submodule "home/.emacs.d/modes/ebib"]
+	path = home/.emacs.d/modes/ebib
+	url = git://github.com/joostkremers/ebib.git
+[submodule "home/.emacs.d/modes/yaml-mode"]
+	path = home/.emacs.d/modes/yaml-mode
+	url = git://github.com/yoshiki/yaml-mode.git
