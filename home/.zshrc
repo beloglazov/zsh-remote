@@ -92,8 +92,6 @@ alias df='df -h'
 alias du='du -hs'
 alias mkdirs='mkdir -p'
 alias n='nano'
-alias pbcopy='xsel --clipboard --input'
-alias pbpaste='xsel --clipboard --output'
 alias bc='bc -l'
 alias psg='ps aux | grep'
 alias emacs-restart='pkill emacs; emacs --daemon'
@@ -122,9 +120,9 @@ alias gitpup='gitpu; gitp'
 # Other aliases
 alias lsd='ls -lhd *(-/DN)'
 alias lsh='ls -lhd .*'
+alias ls1='ls -1'
 alias ff='find |grep'
 alias c="clear"
-alias dir='ls -1'
 
 # Don't share history between terminals
 unsetopt APPEND_HISTORY
