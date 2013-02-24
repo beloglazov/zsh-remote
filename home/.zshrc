@@ -88,7 +88,7 @@ function g () {git ca $*; git push}
 alias ll='ls -lah'
 alias l='ls -lh'
 alias lltime='ll -tr'
-alias df='pydf'
+alias df='df -h'
 alias du='du -hs'
 alias mkdirs='mkdir -p'
 alias n='nano'
