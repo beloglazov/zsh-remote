@@ -101,51 +101,12 @@
 ;; elisp
 (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
 
-;; ess
-(require 'ess-site)
-(setq ess-swv-processor 'knitr)
-(setq ess-swv-pdflatex-commands '("pdflatex"))
-(setq ess-pdf-viewer-pref "")
-(defun knitr-pdf ()
-  (interactive)
-  (ess-swv-knit)
-  (ess-wait-for-process (get-process ess-current-process-name))
-  (delete-other-windows)
-  (ess-swv-PDF))
-(add-hook 'LaTeX-mode-hook
- 	  (lambda ()
-	    (local-set-key (kbd "<f1>") 'knitr-pdf)))
-(add-hook 'ess-mode-hook
- 	  (lambda ()
-	    (local-set-key (kbd "<f1>") 'knitr-pdf)))
-
-;; ebib
-(require 'ebib)
-(setq ebib-index-window-size 30)
-(setq ebib-autogenerate-keys t)
-(setq ebib-uniquify-keys t)
-(setq bibtex-autokey-year-length 4)
-(setq bibtex-autokey-year-title-separator "")
-(setq bibtex-autokey-titlewords 1)
-(setq bibtex-autokey-titleword-length nil)
-
 ;; yaml
 (require 'yaml-mode)
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-hook 'yaml-mode-hook
  	  '(lambda ()
  	     (define-key yaml-mode-map (kbd "<return>") 'newline-and-indent)))
-
-;; erc
-(require 'erc)
-;(erc-modules (quote (autojoin button completion fill irccontrols
-;			      list match menu move-to-prompt
-;			      netsplit networks noncommands
-;			      readonly ring stamp track)))
-(require 'erc-nick-notify)
-(add-hook 'erc-mode-hook
-	  (lambda ()
-	    (erc-nick-notify-mode t)))
 
 ;; markdown
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
