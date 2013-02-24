@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="beloglazov"
+ZSH_THEME="beloglazov-remote"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -24,7 +24,7 @@ DISABLE_AUTO_TITLE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git archlinux extract history-substring-search lein svn autojump)
+plugins=(git extract history-substring-search lein svn autojump)
 
 # Add custom completion scripts
 fpath=(~/.zsh/completion $fpath)
@@ -75,7 +75,6 @@ bindkey "\e[F" end-of-line
 
 function silent () {nohup $@ &>/dev/null &!}
 function e () {silent emacsclient -c $*}
-function acroread () {silent acroread $*}
 function svnd () {svn diff $* | colordiff}
 function top10 () {history | awk '{print $2}'|awk 'BEGIN {FS="|"} {print $1}' | sort | uniq -c | sort -rn | head -10}
 function f() {find ./ -iname "*$1*" 2>/dev/null | grep -i $1}
@@ -83,8 +82,6 @@ function f() {find ./ -iname "*$1*" 2>/dev/null | grep -i $1}
 unalias g
 function g () {git ca $*; git push}
 
-unalias yain
-function yain () {yaourt -S $*; rehash}
 
 # Aliases
 
@@ -95,9 +92,6 @@ alias df='pydf'
 alias du='du -hs'
 alias mkdirs='mkdir -p'
 alias n='nano'
-#alias shutdown='sudo shutdown -Hh now'
-#alias reboot='sudo reboot'
-alias xbox='lftp xbox:xbox@xbox'
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias bc='bc -l'
@@ -105,7 +99,6 @@ alias psg='ps aux | grep'
 alias emacs-restart='pkill emacs; emacs --daemon'
 alias g='grep -i'
 alias x='extract'
-alias za='silent zathura'
 
 # SVN aliales
 alias svn='colorsvn'
@@ -124,28 +117,7 @@ alias gitb='git b'
 alias gitd='git diff'
 alias gitp='git p'
 alias gitpu='git pu'
-
-# Eclipse aliases
-alias eclipse-clojure='silent ~/soft/eclipse/eclipse-clojure-indigo/eclipse'
-alias eclipse-java='silent ~/soft/eclipse/eclipse-java-indigo/eclipse'
-alias eclipse-jee='silent ~/soft/eclipse/eclipse-jee-indigo/eclipse'
-
-# Set up auto extension stuff
-#alias -s html=$BROWSER
-#alias -s org=$BROWSER
-#alias -s php=$BROWSER
-#alias -s com=$BROWSER
-#alias -s net=$BROWSER
-#alias -s png=feh
-#alias -s jpg=feh
-#alias -s gif=feg
-#alias -s sxw=soffice
-#alias -s doc=soffice
-#alias -s gz='tar -xzvf'
-#alias -s bz2='tar -xjvf'
-#alias -s java=$EDITOR
-#alias -s txt=$EDITOR
-#alias -s PKGBUILD=$EDITOR
+alias gitpup='gitpu; gitp'
 
 # Other aliases
 alias lsd='ls -lhd *(-/DN)'
@@ -157,10 +129,7 @@ alias dir='ls -1'
 # Don't share history between terminals
 unsetopt APPEND_HISTORY
 
-export PERL_LOCAL_LIB_ROOT="/home/anton/perl5";
-export PERL_MB_OPT="--install_base /home/anton/perl5";
-export PERL_MM_OPT="INSTALL_BASE=/home/anton/perl5";
-export PERL5LIB="/home/anton/perl5/lib/perl5/i686-linux-thread-multi:/home/anton/perl5/lib/perl5";
-export PATH="/home/anton/perl5/bin:$PATH";
-
 source ~/.zshenv
+
+# Run the emacs daemon
+emacs --daemon

@@ -1,42 +1,32 @@
-This is my configuration of Arch Linux + Xmonad + Zsh. The repository includes the following
-configuration files:
+This shell configuration is supposed to be used on remote servers connected to over SSH. The following software and tools are configured:
 
- * Xmonad config
- * Zsh configs
- * oh-my-zsh with a custom theme
- * Emacs configs
- * .xinitrc
- * .Xresources
- * .gitconfig
- * .nanorc
- * .rtorrent.rc
- * and others
+- Zsh with custom aliases and functions
+- oh-my-zsh with a custom theme
+- nano
+- Emacs 
 
-Apart from that, simple installation scripts are also included.
+Apart from that, simple installation and uninstallation scripts are included.
 
 # Installation
 
 First of all, you need to clone this repository to any directory you want:
 
 ```Bash
-git clone https://github.com/beloglazov/arch-xmonad-zsh.git
+git clone https://github.com/beloglazov/zsh-remote.git
 ```
 
 Next, you need to cd into the cloned repository:
 
 ```Bash
-cd arch-xmonad-zsh
+cd zsh-remote
 ```
 
-The repository contains a number of installation scripts. They can be used to configure a clean
-installation of Arch Linux. To apply the configuration, you need to run the scripts one by one
-according to their numbers. The first script must be run as root to setup the sudo command. The
-other scripts can be run by a regular user, which is sudo-enabled. Once all the installation scripts
-have been run, it's best to reboot the system to see the changes. To run Xmonad, just login as a
-regular user and run:
+The repository contains a few of installation scripts. To apply the configuration, you need to run the scripts one by one according to their numbers. 
 
 ```Bash
-startx
+./01-enable-zsh.sh # set Zsh to be the default shell
+./02-install-configs.sh # create soft links to all the configuration files
+./03-init-submodules.sh # pull the Emacs modes included as submodules
 ```
 
-Enjoy!
+Re-login and enjoy!

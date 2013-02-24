@@ -11,30 +11,6 @@
 (setq ropemacs-separate-doc-buffer nil)
 ;(setq ropemacs-confirm-saving nil)
 
-;; flymake for python
-(when (load "flymake" t)
-  (require 'flymake-cursor)
-  (defun flymake-pychecker-init ()
-    (let* ((temp-file (flymake-init-create-temp-buffer-copy
-                       'flymake-create-temp-inplace))
-           (local-file (file-relative-name
-                        temp-file
-                        (file-name-directory buffer-file-name))))
-      (list "pyflakespep8.py" (list local-file))))
-  (add-to-list 'flymake-allowed-file-name-masks
-               '("\\.py\\'" flymake-pychecker-init))
-  ;; Disable the "buffer has running process"" confirmation
-  ;; when the process is a flymake process
-  (defadvice flymake-start-syntax-check-process
-    (after
-     cheeso-advice-flymake-start-syntax-check-1
-     (cmd args dir)
-     activate compile)
-    ;; set flag to allow exit without query on any
-    ;; active flymake processes
-    (set-process-query-on-exit-flag ad-return-value nil)))
-
-
 ;; pylookup: https://github.com/tsgates/pylookup
 ;; add pylookup to your loadpath, ex) ~/.emacs.d/pylookup
 (setq pylookup-dir "~/.emacs.d/modes/pylookup")
@@ -121,7 +97,7 @@
 	    (set (make-local-variable 'eldoc-documentation-function) 'rope-get-calltip)
 
 	    ;; enable flymake
-	    (flymake-mode t)
+	    ;(flymake-mode t)
  	    ;(setq flymake-cursor-error-display-delay 0.0)
 
 	    ;; rope keybindings
