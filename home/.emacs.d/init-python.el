@@ -1,5 +1,5 @@
 (require 'python-mode)
-(setq py-install-directory "~/.emacs.d/modes/python-mode.el-6.0.11")
+(setq py-install-directory "~/.emacs.d/modes/python-mode.el-6.1.1")
 (setq py-shell-name "ipython2")
 
 (require 'pymacs)
