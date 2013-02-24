@@ -11,6 +11,7 @@ rm -rf ~/.oh-my-zsh
 rm ~/.gitconfig
 rm ~/.emacs.d
 rm ~/.nanorc
+rm ~/.terminfo
 
 # bin
 rm ~/bin/mem

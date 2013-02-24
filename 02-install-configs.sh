@@ -14,6 +14,7 @@ ln -s ${DIR}/home/.oh-my-zsh/themes/beloglazov-remote.zsh-theme ~/.oh-my-zsh/the
 ln -s ${DIR}/home/.gitconfig ~/.gitconfig
 ln -s ${DIR}/home/.emacs.d ~/.emacs.d
 ln -s ${DIR}/home/.nanorc ~/.nanorc
+ln -s ${DIR}/home/.terminfo ~/.terminfo
 
 # backup directories
 mkdir ~/.backups
