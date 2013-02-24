@@ -16,4 +16,4 @@
 	p = push -u
 	pu = pull origin master
 [push]
-	default = simple
+	default = current
