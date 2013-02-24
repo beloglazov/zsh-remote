@@ -130,4 +130,6 @@ unsetopt APPEND_HISTORY
 source ~/.zshenv
 
 # Run the emacs daemon
-emacs --daemon
+if ! pgrep -f 'emacs --daemon'; then
+	emacs --daemon
+fi
