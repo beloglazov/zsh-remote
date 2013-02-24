@@ -16,13 +16,13 @@
 ## ", ', ), >, ], and }.
 
 ## Use auto-indentation.
-set autoindent
+ set autoindent
 
 ## Backup files to filename~.
-set backup
+ set backup
 
 ## The directory to put unique backup files in.
-set backupdir "~/.backups/nano"
+ set backupdir "~/.backups/nano"
 
 ## Do backwards searches by default.
 # set backwards
@@ -35,14 +35,14 @@ set backupdir "~/.backups/nano"
 ## punctuation, optionally followed by closing brackets, can end
 ## sentences.
 ##
-# set brackets ""')>]}"
+ set brackets ""')>]}"
 
 ## Do case sensitive searches by default.
 # set casesensitive
 
 ## Constantly display the cursor position in the statusbar.  Note that
 ## this overrides "quickblank".
-set const
+ set const
 
 ## Use cut to end of line by default.
 # set cut
@@ -60,10 +60,10 @@ set const
 ## searches.  They cannot contain blank characters.  The former set must
 ## come before the latter set, and both must be in the same order.
 ##
-set matchbrackets "(<[{)>]}"
+ set matchbrackets "(<[{)>]}"
 
 ## Use the blank line below the titlebar as extra editing space.
-set morespace
+# set morespace
 
 ## Enable mouse support, if available for your system.  When enabled,
 ## mouse clicks can be used to place the cursor, set the mark (with a
@@ -85,7 +85,7 @@ set morespace
 # set nofollow
 
 ## Don't display the helpful shortcut lists at the bottom of the screen.
-set nohelp
+ set nohelp
 
 ## Don't add newlines to the ends of files.
 # set nonewlines
@@ -136,13 +136,10 @@ set nowrap
 ## will jump to that beginning (either forwards or backwards).  If the
 ## cursor is already at that position, it will jump to the true
 ## beginning of the line.
-set smarthome
+ set smarthome
 
 ## Use smooth scrolling as the default.
-# set smooth
-
-## Enable soft line wrapping (AKA full line display).
-set softwrap
+ set smooth
 
 ## Use this spelling checker instead of the internal one.  This option
 ## does not properly have a default value.
@@ -153,17 +150,13 @@ set softwrap
 # set suspend
 
 ## Use this tab size instead of the default; it must be greater than 0.
-# set tabsize 4
+ set tabsize 4
 
 ## Convert typed tabs to spaces.
 # set tabstospaces
 
 ## Save automatically on exit, don't prompt.
 # set tempfile
-
-## Enable the new (EXPERIMENTAL) generic undo code, not just for line
-## cuts.
-set undo
 
 ## Disallow file modification.  Why would you want this in an rcfile? ;)
 # set view
@@ -221,103 +214,47 @@ set undo
 ## All regexes should be extended regular expressions.
 
 
-## Key bindings
-## Please see nanorc(5) for more details on this
-##
-## Here are some samples to get you going
-##
-# bind M-W nowrap main
-# bind M-A casesens search
-# bind ^S research main
-
-bind ^s whereis main
-bind ^S searchagain main
-bind ^r replace main
-bind ^z undo main
-bind ^y redo main
-# bind ^s writeout main
-bind ^g gotoline main
-
-
-
-## Set this if your backspace key sends delete most of the time (2.1.3+)
-# bind kdel backspace all
-
-
 ## Nanorc files
-include "/usr/share/nano/nanorc.nanorc"
+ include "/usr/share/nano/nanorc.nanorc"
 
 ## C/C++
-include "/usr/share/nano/c.nanorc"
-
-## Makefiles
-include "/usr/share/nano/makefile.nanorc"
-
-## Cascading Style Sheets
-include "/usr/share/nano/css.nanorc"
-
-## Debian files
-# include "/usr/share/nano/debian.nanorc"
-
-## Gentoo files
-# include "/usr/share/nano/gentoo.nanorc"
+ include "/usr/share/nano/c.nanorc"
 
 ## HTML
-include "/usr/share/nano/html.nanorc"
-
-## PHP
-include "/usr/share/nano/php.nanorc"
-
-## TCL
-include "/usr/share/nano/tcl.nanorc"
+ include "/usr/share/nano/html.nanorc"
 
 ## TeX
-include "/usr/share/nano/tex.nanorc"
+ include "/usr/share/nano/tex.nanorc"
 
 ## Quoted emails (under e.g. mutt)
 # include "/usr/share/nano/mutt.nanorc"
 
 ## Patch files
-include "/usr/share/nano/patch.nanorc"
+ include "/usr/share/nano/patch.nanorc"
 
 ## Manpages
-# include "/usr/share/nano/man.nanorc"
+ include "/usr/share/nano/man.nanorc"
 
 ## Groff
 # include "/usr/share/nano/groff.nanorc"
 
 ## Perl
-include "/usr/share/nano/perl.nanorc"
+ include "/usr/share/nano/perl.nanorc"
 
 ## Python
-include "/usr/share/nano/python.nanorc"
+ include "/usr/share/nano/python.nanorc"
 
 ## Ruby
-include "/usr/share/nano/ruby.nanorc"
+ include "/usr/share/nano/ruby.nanorc"
 
 ## Java
-include "/usr/share/nano/java.nanorc"
-
-## Fortran
-# include "/usr/share/nano/fortran.nanorc"
-
-## Objective-C
-# include "/usr/share/nano/objc.nanorc"
-
-## OCaml
-include "/usr/share/nano/ocaml.nanorc"
-
-## AWK
-# include "/usr/share/nano/awk.nanorc"
+ include "/usr/share/nano/java.nanorc"
 
 ## Assembler
-# include "/usr/share/nano/asm.nanorc"
+ include "/usr/share/nano/asm.nanorc"
 
 ## Bourne shell scripts
-include "/usr/share/nano/sh.nanorc"
+ include "/usr/share/nano/sh.nanorc"
 
 ## POV-Ray
 # include "/usr/share/nano/pov.nanorc"
-
-## XML-type files
-include "/usr/share/nano/xml.nanorc"
