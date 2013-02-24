@@ -66,7 +66,7 @@
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) ;; the old M-x.
 
 ;; autopair
-(electric-pair-mode)
+;(electric-pair-mode)
 
 ;(require 'autopair)
 ;(autopair-global-mode)
@@ -87,8 +87,8 @@
 
 ;; clojure
 (require 'clojure-mode)
-(require 'paredit)
-(add-hook 'clojure-mode-hook (lambda () (paredit-mode 1)))
+;(require 'paredit)
+;(add-hook 'clojure-mode-hook (lambda () (paredit-mode 1)))
 
 ;; elisp
 (add-hook 'emacs-lisp-mode-hook 'eldoc-mode)
