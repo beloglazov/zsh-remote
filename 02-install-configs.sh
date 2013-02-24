@@ -26,5 +26,7 @@ mkdir ~/bin
 ln -s ${DIR}/home/bin/mem ~/bin/mem
 
 # ranger
-mkdir -p ~/.config/ranger
-ranger --copy-config=scope
+if command -v ranger >/dev/null 2>&1; then
+	mkdir -p ~/.config/ranger
+	ranger --copy-config=scope
+fi
