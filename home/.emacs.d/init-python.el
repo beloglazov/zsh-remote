@@ -2,8 +2,6 @@
 (setq py-install-directory "~/.emacs.d/modes/python-mode.el-6.1.1")
 (setq py-shell-name "ipython2")
 
-(require 'pymacs)
-(pymacs-load "ropemacs" "rope-")
 (setq ropemacs-codeassist-maxfixes 3) ;; stops from erroring if there's a syntax err
 (setq ropemacs-guess-project t)
 (setq ropemacs-enable-autoimport t)
