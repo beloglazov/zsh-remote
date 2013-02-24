@@ -130,6 +130,6 @@ unsetopt APPEND_HISTORY
 source ~/.zshenv
 
 # Run the emacs daemon
-if ! pgrep -f 'emacs --daemon'; then
+if ! pgrep -u `whoami` -f 'emacs --daemon'; then
 	emacs --daemon
 fi
