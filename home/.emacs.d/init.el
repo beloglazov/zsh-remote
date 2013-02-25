@@ -271,6 +271,7 @@
 
 (global-set-key (kbd "C-S-a") 'mark-whole-buffer)
 (global-set-key (kbd "C-S-w") 'kill-this-buffer)
+(global-set-key (kbd "C-x w") 'kill-this-buffer)
 (global-set-key (kbd "C-b") 'ido-switch-buffer)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-x s") 'save-buffer)
