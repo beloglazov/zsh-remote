@@ -94,7 +94,7 @@ alias e='emacsclient'
 alias n='nano'
 alias bc='bc -l'
 alias psg='ps aux | grep'
-alias emacs-restart='pkill emacs; emacs --daemon'
+alias emacs-restart='pkill -u `whoami` emacs; emacs --daemon'
 alias g='grep -i'
 alias x='extract'
 
