@@ -43,3 +43,6 @@
 [submodule "home/.emacs.d/modes/fci"]
 	path = home/.emacs.d/modes/fci
 	url = git://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "home/.vim/bundle/vundle"]
+	path = home/.vim/bundle/vundle
+	url = git://github.com/gmarik/vundle.git

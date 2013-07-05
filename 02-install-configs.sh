@@ -22,6 +22,8 @@ ln -s ${DIR}/home/.oh-my-zsh/themes/beloglazov-remote.zsh-theme ~/.oh-my-zsh/the
 # other
 ln -s ${DIR}/home/.gitconfig ~/.gitconfig
 ln -s ${DIR}/home/.emacs.d ~/.emacs.d
+ln -s ${DIR}/home/.vim ~/.vim
+ln -s ${DIR}/home/.vimrc ~/.vimrc
 ln -s ${DIR}/home/.nanorc ~/.nanorc
 ln -s ${DIR}/home/.terminfo ~/.terminfo
 
