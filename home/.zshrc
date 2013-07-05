@@ -127,6 +127,8 @@ alias c="clear"
 # Don't share history between terminals
 unsetopt APPEND_HISTORY
 
+stty -ixon
+
 source ~/.zshenv
 
 # Run the emacs daemon
